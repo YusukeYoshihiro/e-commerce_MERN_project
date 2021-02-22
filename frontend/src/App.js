@@ -34,6 +34,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
   }
   h3{
     padding : 1rem 0;

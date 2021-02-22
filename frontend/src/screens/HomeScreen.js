@@ -2,6 +2,7 @@ import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 import Product from '../components/Product';
 import products from '../products';
+import styled from 'styled-components';
 
 
 const HomeScreen = () => {
@@ -19,4 +20,4 @@ const HomeScreen = () => {
   )
 }
 
-export default HomeScreen
+export default HomeScreen;

@@ -4,7 +4,7 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
 import styled from 'styled-components';
 import logo from '../e-commerce_logo.svg';
 const Img = styled.img`
-  width: 15rem;
+  width: 15.5rem;
   margin-right:5px;
 
   @media (max-width: 376px) {

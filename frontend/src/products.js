@@ -60,7 +60,7 @@ const products = [
     brand: 'Bauer',
     category: 'Pants',
     price: 69.99,
-    countInStock: 9,
+    countInStock: 0,
     rating: 2.5,
     numReviews: 3,
   },

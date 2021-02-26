@@ -2,9 +2,10 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Row, Col } from 'react-bootstrap';
 import Product from '../components/Product';
+import Message from '../components/Message';
+import Loader from '../components/Loader';
 import { listProducts } from '../actions/productActions';
-import loadingLogo from '../asset/loader_spinner.gif';
-import styled from 'styled-components';
+
 
 const HomeScreen = () => {
   const dispatch = useDispatch();
@@ -23,10 +24,10 @@ const HomeScreen = () => {
   return (
     <>
       <h1>Find Your Best Gears</h1>
-      {loading ?
-        (<LoadingImg src={loadingLogo} alt="loading..." />)
-        : error ? (
-          <h3>{error}</h3>
+      {loading ?(
+      <Loader />
+      ): error ? (
+          <Message>{error}</Message>
         ) : (
             <Row>
               {products.map(product => (
@@ -36,15 +37,11 @@ const HomeScreen = () => {
               ))}
             </Row>
           )}
-
     </>
   )
 }
 
 export default HomeScreen;
 
-export const LoadingImg = styled.img`
-  display: block;
-  margin:0 auto;
-`;
+
 

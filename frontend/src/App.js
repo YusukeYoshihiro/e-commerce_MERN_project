@@ -5,19 +5,21 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import HomeScreen from './screens/HomeScreen';
 import ProductScreen from './screens/ProductScreen';
-import { createGlobalStyle } from 'styled-components';
+import CartScreen from './screens/CartScreen';
+import Globalstyle from './Globalstyle';
 import styled from 'styled-components';
 
 function App() {
   return (
     <>
-      <GlobalStyle />
+      <Globalstyle />
       <Router>
         <Header />
         <Main className="py-3">
           <Container>
             <Route path='/' component={HomeScreen} exact/>
             <Route path='/product/:id' component={ProductScreen}/>
+            <Route path='/cart/:id?' component={CartScreen}/>
           </Container>
         </Main>
         <Footer />
@@ -28,19 +30,7 @@ function App() {
 
 export default App;
 
-// styled components
-const GlobalStyle = createGlobalStyle`
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 300;
-  }
-  h3{
-    padding : 1rem 0;
-  }
-`;
-
 const Main = styled.main`
   min-height: 80vh
 `;
+

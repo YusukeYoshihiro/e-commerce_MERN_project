@@ -28,7 +28,7 @@ const products = [
     brand: 'Bauer',
     category: 'Helmet',
     price: 119.98,
-    countInStock: 3,
+    countInStock: 0,
     rating: 4,
     numReviews: 12,
   },

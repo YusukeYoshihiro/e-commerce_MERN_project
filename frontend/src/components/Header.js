@@ -2,11 +2,11 @@ import React from 'react';
 import { LinkContainer } from 'react-router-bootstrap';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import styled from 'styled-components';
-import logo from '../e-commerce_logo.svg';
+import logo from '../fabe_logo_new.png';
 
 const Header = () => {
   return (
-    <Navbar bg="dark" variant='dark' expand="lg" collapseOnSelect>
+    <Navbar style={{backgroundColor:'#73cac2'}} variant='light' expand="lg" collapseOnSelect>
       <Container>
         <LinkContainer to='/'>
           <Img src={logo} />
@@ -36,7 +36,7 @@ export default Header;
 
 //Styles 
 const Img = styled.img`
-  width: 15.5rem;
+  width: 5rem;
   margin-right:5px;
 
   @media (max-width: 376px) {
